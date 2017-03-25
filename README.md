@@ -37,6 +37,11 @@ The input images are pre processed - Standardized, broght to a smaller resolutio
 The Unet model is trained.
 It is run for 100 epochs. Each training epoch took about 1500 Seconds on an Amazon EC2 instance enabled with CUDA.
 
+Model 3 - The complete UNET with Augmentation.
+The input images are pre processed - Standardized, broght to a smaller resolution.
+The Unet model is trained with random image augmentations like Horizontal & vertical flip, rotation etc.
+It is run for 100 epochs. Each training epoch took about 1500 Seconds on an Amazon EC2 instance enabled with CUDA
+
 Hyperparamets tweaks and results:
 1. Reducing the number of layers only decreased the dice coefficient
 2. Increased the number of layers, adding another level of depth. This slowed down the training process. Each epoch took about 4500 seconds. This experiment was stopped after one epoch with the interest of time
